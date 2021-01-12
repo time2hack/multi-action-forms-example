@@ -1,8 +1,8 @@
 [[redirects]]
   from = "/addAddress"
-  to = "/.functions/addAddress"
+  to = "/.netlify/functions/addAddress"
 
 [[redirects]]
   from = "/updateAddress"
-  to = "/.functions/updateAddress"
+  to = "/.netlify/functions/updateAddress"
 
