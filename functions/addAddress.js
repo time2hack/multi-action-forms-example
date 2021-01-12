@@ -1,4 +1,14 @@
 exports.handler = function (event, context, callback) {
+  if (event.httpMethod === "OPTIONS") {
+    callback(null, {
+      statusCode: 204,
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': '*'
+      }
+    });
+  }
+
   if (event.httpMethod !== "POST") {
     return {
       statusCode: 401,
