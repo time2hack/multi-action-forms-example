@@ -34,7 +34,7 @@
     </nav>
     <div class="container p-3">
       <h2 class="mb-5">Add/Update Address</h2>
-      <form class="row g-3" action="/addAddress" method="POST">
+      <form class="row g-3" action="/.netlify/functions/addAddress" method="POST">
         <div class="col-12">
           <label for="email" class="form-label">Email</label>
           <input type="email" class="form-control" name="email" id="email">
@@ -64,7 +64,7 @@
         </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Add</button>
-          <button type="submit" class="btn btn-success" formaction="/updateAddress" formmethod="POST">Update</button>
+          <button type="submit" class="btn btn-success" formaction="/.netlify/functions/updateAddress" formmethod="POST">Update</button>
         </div>
       </form>
     </div>

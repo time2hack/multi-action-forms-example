@@ -83,7 +83,7 @@
           return
         }
 
-        fetch('/addAddress', { method: 'POST', body: new FormData(form) })
+        fetch('/.netlify/functions/addAddress', { method: 'POST', body: new FormData(form) })
           .then((r => r.json()))
           .then(console.log)
       })
@@ -95,7 +95,7 @@
           return
         }
 
-        fetch('/updateAddress', { method: 'POST', body: new FormData(form) })
+        fetch('/.netlify/functions/updateAddress', { method: 'POST', body: new FormData(form) })
           .then((r => r.json()))
           .then(console.log)
       })
